@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prefeitura Municipal de Nova Esperança</title>
+  <meta name="description" content="Portal oficial da Prefeitura Municipal de Nova Esperança: serviços, notícias, transparência e atendimento ao cidadão." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <span class="badge">Portal Oficial</span>
+          <span class="muted">Prefeitura Municipal de <strong>Nova Esperança</strong></span>
+        </div>
+
+        <div class="topbar__right" aria-label="Acessibilidade">
+          <button class="btn-link" data-font="dec" type="button" aria-label="Diminuir fonte">A-</button>
+          <button class="btn-link" data-font="inc" type="button" aria-label="Aumentar fonte">A+</button>
+          <button class="btn-link" data-contrast="toggle" type="button" aria-label="Alternar alto contraste">Contraste</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="navwrap">
+      <div class="container navwrap__inner">
+        <a class="brand" href="index.html" aria-label="Ir para a página inicial">
+          <span class="brand__logo" aria-hidden="true">NE</span>
+          <div class="brand__text">
+            <span class="brand__title">Prefeitura de Nova Esperança</span>
+            <span class="brand__subtitle">Serviços • Notícias • Transparência</span>
+          </div>
+        </a>
+
+        <button class="menu-btn" type="button" data-menu="toggle" aria-expanded="false" aria-controls="menu">
+          <span class="menu-btn__bars" aria-hidden="true"></span>
+          <span class="menu-btn__label">Menu</span>
+        </button>
+
+        <nav id="menu" class="menu" aria-label="Navegação principal">
+          <a class="menu__link is-active" href="index.html">Início</a>
+          <a class="menu__link" href="servicos.html">Serviços</a>
+          <a class="menu__link" href="noticias.html">Notícias</a>
+          <a class="menu__link" href="transparencia.html">Transparência</a>
+          <a class="menu__link" href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1>Bem-vindo ao Portal da Prefeitura</h1>
+          <p>
+            Aqui você encontra serviços ao cidadão, notícias oficiais, agenda pública e acesso ao Portal da Transparência.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="servicos.html">Acessar Serviços</a>
+            <a class="btn btn--ghost" href="transparencia.html">Portal da Transparência</a>
+          </div>
+
+          <form class="search" action="noticias.html" method="get" role="search" aria-label="Pesquisar no portal">
+            <label class="sr-only" for="q">Pesquisar</label>
+            <input id="q" name="q" type="search" placeholder="Pesquisar notícias, serviços, editais..." />
+            <button type="submit">Buscar</button>
+          </form>
+
+          <div class="quicklinks" aria-label="Acesso rápido">
+            <a class="chip" href="servicos.html#iptu">IPTU</a>
+            <a class="chip" href="servicos.html#alvara">Alvará</a>
+            <a class="chip" href="servicos.html#ouvidoria">Ouvidoria</a>
+            <a class="chip" href="transparencia.html#licitacoes">Licitações</a>
+            <a class="chip" href="transparencia.html#folha">Folha de pagamento</a>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-label="Atendimento e horários">
+          <h2>Atendimento</h2>
+          <p class="muted">Seg–Sex • 08:00–17:00</p>
+          <ul class="list">
+            <li><strong>Telefone:</strong> (00) 0000-0000</li>
+            <li><strong>WhatsApp:</strong> (00) 90000-0000</li>
+            <li><strong>Endereço:</strong> Praça Central, 100 • Centro</li>
+          </ul>
+          <a class="btn btn--small" href="contato.html">Falar com a Prefeitura</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Serviços em destaque</h2>
+          <p class="muted">Acesso rápido aos serviços mais procurados.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <a class="card" href="servicos.html#iptu">
+            <h3>IPTU e taxas</h3>
+            <p>Emissão de guia, 2ª via e consulta de débitos.</p>
+            <span class="card__cta">Acessar →</span>
+          </a>
+          <a class="card" href="servicos.html#alvara">
+            <h3>Alvarás</h3>
+            <p>Solicitação e acompanhamento de alvará de funcionamento.</p>
+            <span class="card__cta">Acessar →</span>
+          </a>
+          <a class="card" href="servicos.html#protocolo">
+            <h3>Protocolo online</h3>
+            <p>Abrir requerimentos e acompanhar solicitações.</p>
+            <span class="card__cta">Acessar →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section__header section__header--row">
+          <div>
+            <h2>Últimas notícias</h2>
+            <p class="muted">Informações oficiais e comunicados.</p>
+          </div>
+          <a class="btn btn--ghost" href="noticias.html">Ver todas</a>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="news">
+            <p class="news__meta">05/02/2026 • Administração</p>
+            <h3 class="news__title"><a href="noticias.html#n1">Mutirão de atendimento ao cidadão</a></h3>
+            <p class="news__excerpt">Ação especial para atualização cadastral e orientação de serviços municipais.</p>
+          </article>
+          <article class="news">
+            <p class="news__meta">02/02/2026 • Saúde</p>
+            <h3 class="news__title"><a href="noticias.html#n2">Campanha de vacinação</a></h3>
+            <p class="news__excerpt">Confira o calendário, locais e documentos necessários.</p>
+          </article>
+          <article class="news">
+            <p class="news__meta">28/01/2026 • Obras</p>
+            <h3 class="news__title"><a href="noticias.html#n3">Manutenção de vias urbanas</a></h3>
+            <p class="news__excerpt">Cronograma de recuperação asfáltica e sinalização.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2>Transparência e controle social</h2>
+          <p class="muted">Acesse dados, relatórios e informações públicas.</p>
+        </header>
+
+        <div class="grid grid--2">
+          <a class="card" href="transparencia.html#licitacoes">
+            <h3>Licitações e contratos</h3>
+            <p>Editais, atas, contratos e acompanhamento.</p>
+            <span class="card__cta">Acessar →</span>
+          </a>
+          <a class="card" href="transparencia.html#receitas">
+            <h3>Receitas e despesas</h3>
+            <p>Execução orçamentária e relatórios fiscais.</p>
+            <span class="card__cta">Acessar →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--thin">
+      <div class="container cta">
+        <div>
+          <h2>Ouvidoria e e-SIC</h2>
+          <p class="muted">Sugestões, reclamações, solicitações e pedidos de acesso à informação.</p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn" href="servicos.html#ouvidoria">Abrir manifestação</a>
+          <a class="btn btn--ghost" href="transparencia.html#esic">Acesso à informação</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <h3>Prefeitura de Nova Esperança</h3>
+        <p class="muted">CNPJ: 00.000.000/0001-00 • Praça Central, 100 • Centro</p>
+        <p class="muted">Telefone: (00) 0000-0000 • E-mail: contato@novaesperanca.gov.br</p>
+      </div>
+
+      <div>
+        <h4>Links úteis</h4>
+        <ul class="footer__list">
+          <li><a href="transparencia.html">Portal da Transparência</a></li>
+          <li><a href="servicos.html#lgpd">LGPD</a></li>
+          <li><a href="contato.html#mapa">Como chegar</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atalhos</h4>
+        <ul class="footer__list">
+          <li><a href="servicos.html#iptu">IPTU</a></li>
+          <li><a href="servicos.html#protocolo">Protocolo</a></li>
+          <li><a href="servicos.html#ouvidoria">Ouvidoria</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span class="muted">© <span id="year"></span> Prefeitura Municipal de Nova Esperança. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

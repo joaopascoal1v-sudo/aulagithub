@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Notícias • Prefeitura de Nova Esperança</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <span class="badge">Portal Oficial</span>
+          <span class="muted">Prefeitura de <strong>Nova Esperança</strong></span>
+        </div>
+        <div class="topbar__right" aria-label="Acessibilidade">
+          <button class="btn-link" data-font="dec" type="button">A-</button>
+          <button class="btn-link" data-font="inc" type="button">A+</button>
+          <button class="btn-link" data-contrast="toggle" type="button">Contraste</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="navwrap">
+      <div class="container navwrap__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__logo" aria-hidden="true">NE</span>
+          <div class="brand__text">
+            <span class="brand__title">Prefeitura de Nova Esperança</span>
+            <span class="brand__subtitle">Notícias e comunicados</span>
+          </div>
+        </a>
+
+        <button class="menu-btn" type="button" data-menu="toggle" aria-expanded="false" aria-controls="menu">
+          <span class="menu-btn__bars" aria-hidden="true"></span>
+          <span class="menu-btn__label">Menu</span>
+        </button>
+
+        <nav id="menu" class="menu" aria-label="Navegação principal">
+          <a class="menu__link" href="index.html">Início</a>
+          <a class="menu__link" href="servicos.html">Serviços</a>
+          <a class="menu__link is-active" href="noticias.html">Notícias</a>
+          <a class="menu__link" href="transparencia.html">Transparência</a>
+          <a class="menu__link" href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" class="page">
+    <div class="container">
+      <header class="page__header">
+        <h1>Notícias</h1>
+        <p class="muted">Busca e lista de notícias (exemplo). Você pode trocar por dados reais depois.</p>
+
+        <div class="search search--inline">
+          <label class="sr-only" for="q">Pesquisar notícias</label>
+          <input id="q" type="search" placeholder="Digite um termo e tecle Enter..." />
+        </div>
+      </header>
+
+      <div class="stack" id="newsList">
+        <article id="n1" class="card card--pad">
+          <p class="news__meta">05/02/2026 • Administração</p>
+          <h2>Mutirão de atendimento ao cidadão</h2>
+          <p>Atendimento ampliado para orientações, atualização cadastral e emissão de documentos municipais.</p>
+        </article>
+
+        <article id="n2" class="card card--pad">
+          <p class="news__meta">02/02/2026 • Saúde</p>
+          <h2>Campanha de vacinação</h2>
+          <p>Consulte o calendário, locais de atendimento e documentos necessários.</p>
+        </article>
+
+        <article id="n3" class="card card--pad">
+          <p class="news__meta">28/01/2026 • Obras</p>
+          <h2>Manutenção de vias urbanas</h2>
+          <p>Cronograma de recuperação asfáltica e sinalização em bairros prioritários.</p>
+        </article>
+      </div>
+
+      <p class="hint">Dica: dá para trocar isso por uma API/JSON e renderizar via JavaScript.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__bottom">
+      <span class="muted">© <span id="year"></span> Prefeitura Municipal de Nova Esperança.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Filtro simples no front (demo)
+    const input = document.getElementById("q");
+    const list = document.getElementById("newsList");
+    input?.addEventListener("input", () => {
+      const q = input.value.toLowerCase().trim();
+      [...list.querySelectorAll("article")].forEach(a => {
+        const text = a.innerText.toLowerCase();
+        a.style.display = text.includes(q) ? "" : "none";
+      });
+    });
+
+    // Se vier ?q= na URL (da busca da home)
+    const params = new URLSearchParams(location.search);
+    const qq = params.get("q");
+    if (qq) { input.value = qq; input.dispatchEvent(new Event("input")); }
+  </script>
+</body>
+</html>

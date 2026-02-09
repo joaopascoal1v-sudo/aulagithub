@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Serviços • Prefeitura de Nova Esperança</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <span class="badge">Portal Oficial</span>
+          <span class="muted">Prefeitura de <strong>Nova Esperança</strong></span>
+        </div>
+        <div class="topbar__right" aria-label="Acessibilidade">
+          <button class="btn-link" data-font="dec" type="button">A-</button>
+          <button class="btn-link" data-font="inc" type="button">A+</button>
+          <button class="btn-link" data-contrast="toggle" type="button">Contraste</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="navwrap">
+      <div class="container navwrap__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__logo" aria-hidden="true">NE</span>
+          <div class="brand__text">
+            <span class="brand__title">Prefeitura de Nova Esperança</span>
+            <span class="brand__subtitle">Serviços ao cidadão</span>
+          </div>
+        </a>
+
+        <button class="menu-btn" type="button" data-menu="toggle" aria-expanded="false" aria-controls="menu">
+          <span class="menu-btn__bars" aria-hidden="true"></span>
+          <span class="menu-btn__label">Menu</span>
+        </button>
+
+        <nav id="menu" class="menu" aria-label="Navegação principal">
+          <a class="menu__link" href="index.html">Início</a>
+          <a class="menu__link is-active" href="servicos.html">Serviços</a>
+          <a class="menu__link" href="noticias.html">Notícias</a>
+          <a class="menu__link" href="transparencia.html">Transparência</a>
+          <a class="menu__link" href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" class="page">
+    <div class="container">
+      <header class="page__header">
+        <h1>Serviços</h1>
+        <p class="muted">Selecione um serviço e siga as instruções. (Integrações reais podem ser ligadas depois.)</p>
+      </header>
+
+      <div class="grid grid--2">
+        <section id="iptu" class="card card--pad">
+          <h2>IPTU e Taxas</h2>
+          <p>Emita 2ª via, consulte débitos e simule parcelamento.</p>
+          <div class="actions">
+            <a class="btn btn--small" href="#">Emitir guia</a>
+            <a class="btn btn--ghost btn--small" href="#">Consultar débitos</a>
+          </div>
+          <p class="hint">Dica: conecte aqui o link do sistema tributário do município.</p>
+        </section>
+
+        <section id="alvara" class="card card--pad">
+          <h2>Alvará de Funcionamento</h2>
+          <p>Solicite e acompanhe seu processo.</p>
+          <div class="actions">
+            <a class="btn btn--small" href="#">Solicitar alvará</a>
+            <a class="btn btn--ghost btn--small" href="#">Acompanhar</a>
+          </div>
+        </section>
+
+        <section id="protocolo" class="card card--pad">
+          <h2>Protocolo Online</h2>
+          <p>Abra requerimentos e acompanhe solicitações.</p>
+          <div class="actions">
+            <a class="btn btn--small" href="#">Abrir protocolo</a>
+            <a class="btn btn--ghost btn--small" href="#">Consultar protocolo</a>
+          </div>
+        </section>
+
+        <section id="ouvidoria" class="card card--pad">
+          <h2>Ouvidoria</h2>
+          <p>Registre sugestões, reclamações, denúncias e elogios.</p>
+          <div class="actions">
+            <a class="btn btn--small" href="contato.html#form">Abrir manifestação</a>
+            <a class="btn btn--ghost btn--small" href="#">Acompanhar manifestação</a>
+          </div>
+        </section>
+
+        <section id="educacao" class="card card--pad">
+          <h2>Educação</h2>
+          <p>Matrícula, transporte escolar e calendário.</p>
+          <div class="actions">
+            <a class="btn btn--small" href="#">Matrícula</a>
+            <a class="btn btn--ghost btn--small" href="#">Calendário</a>
+          </div>
+        </section>
+
+        <section id="lgpd" class="card card--pad">
+          <h2>LGPD</h2>
+          <p>Canal de privacidade, consentimento e encarregado (DPO).</p>
+          <div class="actions">
+            <a class="btn btn--small" href="#">Política de Privacidade</a>
+            <a class="btn btn--ghost btn--small" href="#">Falar com o DPO</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__bottom">
+      <span class="muted">© <span id="year"></span> Prefeitura Municipal de Nova Esperança.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

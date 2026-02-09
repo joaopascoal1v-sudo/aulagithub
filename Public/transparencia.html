@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Transparência • Prefeitura de Nova Esperança</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <span class="badge">Portal Oficial</span>
+          <span class="muted">Prefeitura de <strong>Nova Esperança</strong></span>
+        </div>
+        <div class="topbar__right" aria-label="Acessibilidade">
+          <button class="btn-link" data-font="dec" type="button">A-</button>
+          <button class="btn-link" data-font="inc" type="button">A+</button>
+          <button class="btn-link" data-contrast="toggle" type="button">Contraste</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="navwrap">
+      <div class="container navwrap__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__logo" aria-hidden="true">NE</span>
+          <div class="brand__text">
+            <span class="brand__title">Prefeitura de Nova Esperança</span>
+            <span class="brand__subtitle">Portal da Transparência</span>
+          </div>
+        </a>
+
+        <button class="menu-btn" type="button" data-menu="toggle" aria-expanded="false" aria-controls="menu">
+          <span class="menu-btn__bars" aria-hidden="true"></span>
+          <span class="menu-btn__label">Menu</span>
+        </button>
+
+        <nav id="menu" class="menu" aria-label="Navegação principal">
+          <a class="menu__link" href="index.html">Início</a>
+          <a class="menu__link" href="servicos.html">Serviços</a>
+          <a class="menu__link" href="noticias.html">Notícias</a>
+          <a class="menu__link is-active" href="transparencia.html">Transparência</a>
+          <a class="menu__link" href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" class="page">
+    <div class="container">
+      <header class="page__header">
+        <h1>Transparência</h1>
+        <p class="muted">Acesso a informações públicas, relatórios e dados do município (modelo).</p>
+      </header>
+
+      <div class="grid grid--2">
+        <section id="licitacoes" class="card card--pad">
+          <h2>Licitações</h2>
+          <ul class="list">
+            <li><a href="#">Editais (PDF)</a></li>
+            <li><a href="#">Atas e resultados</a></li>
+            <li><a href="#">Contratos vigentes</a></li>
+          </ul>
+          <p class="hint">Troque os links pelos documentos reais.</p>
+        </section>
+
+        <section id="receitas" class="card card--pad">
+          <h2>Receitas e Despesas</h2>
+          <ul class="list">
+            <li><a href="#">Execução orçamentária</a></li>
+            <li><a href="#">Relatórios fiscais</a></li>
+            <li><a href="#">Diárias e passagens</a></li>
+          </ul>
+        </section>
+
+        <section id="folha" class="card card--pad">
+          <h2>Folha de pagamento</h2>
+          <ul class="list">
+            <li><a href="#">Remuneração e cargos</a></li>
+            <li><a href="#">Servidores e lotação</a></li>
+          </ul>
+        </section>
+
+        <section id="esic" class="card card--pad">
+          <h2>e-SIC (Acesso à informação)</h2>
+          <p>Faça pedidos de acesso à informação, acompanhe prazos e respostas.</p>
+          <div class="actions">
+            <a class="btn btn--small" href="#">Abrir pedido</a>
+            <a class="btn btn--ghost btn--small" href="#">Acompanhar</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__bottom">
+      <span class="muted">© <span id="year"></span> Prefeitura Municipal de Nova Esperança.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
